@@ -1,0 +1,10 @@
+enable
+configure terminal
+hostname	//change hostname
+no ip domain-lookup	//no extra ip lookup
+banner *** ***	//descripation
+enable secret (password)	//hashedpassword
+line vtp 0 15	//for serial connection
+	password (password)
+	login local	//ask password at login
+	exec-timeout
